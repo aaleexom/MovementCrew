@@ -1,0 +1,984 @@
+/*=============== Scroll Personalizado ===============*/
+body::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    color: #27272B;
+    opacity: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #27272B;
+    background-
+}
+/*====================================================*/
+
+
+*{
+    margin: 0;
+}
+
+body {
+    min-width:870px;
+    width: auto !important;
+    width:100%;
+}
+
+@font-face {
+  font-family: "roverd";
+  src: url("fonts/roverd.otf");
+}
+
+ul, ol {
+    list-style: none;
+}
+
+header {
+    position: relative;
+    height: 55px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 1px 5px 1px rgba(0,0,0,.3);
+}
+
+.logo {
+    float: left;
+    display: inline-block;
+    position: absolute;
+    padding-top: 0px;
+    padding-left: 15px;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    z-index: 1;
+}
+
+.logo a {
+    font-family: "roverd", 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 40px;
+    color: #27272B;
+}
+
+.nav {
+    float: right;
+    display: inline-block;
+    padding-top: 15px;
+    padding-right: 5px;
+}
+
+.nav ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.nav ul li a {
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-size: 16px;
+    color: #27272B;
+    display: block;
+    padding: 1px 20px;
+}
+
+.nav ul li .onthis {
+    border: 1px solid #27272B;
+    border-collapse: separate;
+    border-spacing: 10px 50px;
+    border-radius: 100px;
+    transition: .6s;
+}
+
+.nav ul li .onthis:hover {
+    background-color: #27272B;
+    color: white;
+}
+
+.nav ul li .noton {
+    transition: .6s;
+}
+
+.nav ul li .noton:hover {
+    border: 1px solid #27272B;
+    border-collapse: separate;
+    border-spacing: 10px 50px;
+    border-radius: 100px;
+}
+
+#page1 {
+    background-image: url(images/bg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20% 200px;
+    position: relative;
+}
+
+.p1box0 {
+    width: 100%;
+    text-align: center;
+    animation: 1s ease-out 0s 1 titleEnter;
+}
+
+.p1box0 .green {
+    display: inline;
+    color: #44B35A;
+    font-family: 'Raleway', sans-serif;
+    animation: 2s ease-out 0s 1 blackToGreen;
+    font-size:40px;
+}
+
+.p1box0 .black {
+    display: inline;
+    color: #27272B;
+    font-family: 'Raleway', sans-serif;
+    font-size:40px;
+}
+
+.p1box0 p {
+    color: #27272B;
+    font-family: 'Raleway', sans-serif;
+    font-size:20px;
+    /*color: #fff;
+    background-color: rgba(0,0,0,.4);
+    border-radius: 20px;
+    padding: 5px 30px;
+    animation: 2s ease-out 0s 1 fadeBG;*/
+}
+
+#page2 {
+    padding: 100px 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 22px;
+    vertical-align: middle;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,.3);
+}
+
+.p2box0 {
+    width: 300px;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    padding: 0px 50px;
+    border-right: 1px solid #27272B;
+}
+
+.p2box1 {
+    width: 300px;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    padding: 0px 50px;
+    vertical-align: top;
+    margin: auto;
+}
+
+.p2box1 p {
+    text-align: right;
+}
+
+.centerbox {
+    border: 2px solid #27272B;
+    border-collapse: separate;
+    border-spacing: 10px 50px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #27272B;
+    transition: .6s;
+    text-align: center;
+}
+
+.centerbox{
+    text-decoration: none;
+    text-align: center;
+    color: #27272B;
+    padding: 0px 20px;
+}
+
+.p2box0 .centerbox{
+    margin-right: 25px;
+}
+
+.p2box1 .centerbox{
+    margin-right: 10px;
+}
+
+.centerbox:hover {
+    background-color: #27272B;
+    color: white;
+}
+
+#page2 .p2box0 ul {
+    text-align: center;
+}
+
+#page3 {
+    background-image: url(images/bg2.jpg);
+    text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.separator {
+    padding: 100px 150px;
+}
+
+#page3 .p3box0 p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #27272B;
+}
+
+#page3 .p3box0 ul li a {
+    border: 4px solid #44B35A;
+    border-collapse: separate;
+    border-spacing: 10px 50px;
+    border-radius: 100px;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #44B35A;
+    transition: .6s;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,.3);
+    text-shadow: 0px 0px 2px rgba(0,0,0,.3);
+}
+
+#page3 .p3box0 ul li a:hover {
+    background-color: #44B35A;
+    color: white;
+    padding: 0px 150px;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0);
+    text-shadow: 0px 0px 2px rgba(0,0,0,0);
+}
+
+.stylesm {
+    font-family: "roverd", 'Raleway', sans-serif;
+    font-size: 100px;
+    color: #27272B;
+}
+
+#page4 {
+    background-color: #27272B;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: white;
+    padding: 7px 0px; 
+    position: relative;
+}
+
+#page4 p {
+    font-size: 13px;
+}
+
+@keyframes slideInFromRight {
+  0% {
+      transform: translateX(10%);
+      opacity: 0;
+  }
+  20% {
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+      transform: translateX(-10%);
+      opacity: 0;
+  }
+  20% {
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes titleEnter {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  20% {
+      opacity: 0;
+  }
+  75% {
+      transform: translateX(2%);
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes blackToGreen {
+  0% {
+      color: #27272B; 
+  }
+  45% {
+      color: #27272B;
+  }
+  65% {
+      color: #44B35A;
+  }
+}
+
+@keyframes fadeBG {
+  0% {
+      background-color: rgba(0,0,0,0); 
+  }
+  25% {
+      background-color: rgba(0,0,0,0);
+  }
+  75% {
+      background-color: rgba(0,0,0,.4);
+  }
+}
+
+/* ================== Tricks ====================== */
+
+#page1tricks {
+    background-image: url(images/bgtricks.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 580px;
+    margin-bottom: 70px;
+}
+
+#page2tricks {
+    padding: 30px 0px;
+}
+
+#sqSelector {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(255,255,255,.6);
+    position: absolute;
+    animation: 2s ease-out 0s 1 sqSlide;
+}
+
+#sqSelector2 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(153, 196, 212, 0);
+    position: absolute;
+    animation: 2s ease-out 0s 1 sqSlideTwo;
+}
+
+.tricksText {
+    text-align: center;
+    font-family: "roverd", 'Raleway', sans-serif;
+    font-size: 200px;
+    color: #27272B;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    animation: 3s ease-out 0s 1 fadeInSlideUp;
+}
+
+.p2box0tricks {
+    
+    width: 100%
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    padding: 0px 250px;
+  /*border-right: 1px solid #27272B;*/
+}
+
+.p2box0tricks img {
+    width: 500px;
+    height: 100%;
+    margin 15px;
+}
+
+.centergif {
+    width: 100%;
+    height: auto;
+    text-align: center;
+        
+}
+
+.titleTricks{
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.p2box0tricks p {
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#line {
+    width: 40%;
+    height: 70px;
+    background-color: transparent;
+    margin: auto;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #404047;
+}
+
+.line {
+    width: 40%;
+    height: 70px;
+    background-color: transparent;
+    margin: auto;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #404047;
+}
+
+.spoilerText {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-size: 36px;
+    background-color: #EAEBEE;
+    padding: 6px 0px;
+    border-radius: 60px;
+    margin-bottom: 10px;
+}
+
+input#submit{
+    background:none;
+    border:none;
+    font-size:1em;
+    color:#27272B;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+@keyframes sqSlide {
+    0% {
+        height: 0%;
+    }
+    50% {
+        height: 0%;
+    }
+    60%{
+        height: 0%;
+    }
+    80% {
+        height: 100%
+    }
+    100% {
+        height: 100%
+    }
+}
+
+@keyframes sqSlideTwo {
+    0% {
+        background-color: rgba(153, 196, 212, 1);
+        width: 0%;
+        height: 100%;
+    }
+    20%{
+        width: 0%;
+        height: 100%;
+    }
+    50%
+    {
+        width: 100%;
+        height: 100%;
+    }
+    70%{
+        width: 100%;
+        height: 0%;
+        background-color: rgba(153, 196, 212, 1);
+    }
+    90%{
+        width: 100%;
+        height: 0%;
+        background-color: rgba(153, 196, 212, 1);
+    }
+
+    100%{
+        width: 100%;
+        height: 0%;
+        background-color: rgba(153, 196, 212, 1);
+    }
+}
+
+
+@keyframes fadeInSlideUp {
+    0%{
+      opacity: 0;
+      top: 70%;
+    }
+    30%{
+      opacity: 0;
+      top: 70%;
+    }
+    40%{
+      opacity: 1;
+      top: -5%;
+    }
+    55%{
+      opacity: 1;
+      top: 0%;  
+    }
+}
+
+
+/* ================== Tutoriales ====================== */
+
+#page1tuts {
+    background-image: url(images/bg3.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 580px;
+    margin-bottom: 70px;
+}
+
+#circleSelector {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(255,255,255,.6);
+    position: absolute;
+    animation: 2s ease-out 0s 1 squareSlide;
+}
+
+#circleSelector2 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(242, 117, 78, 0);
+    position: absolute;
+    animation: 2s ease-out 0s 1 squareSlideTwo;
+}
+
+.tutorialText {
+    text-align: center;
+    font-family: "roverd", 'Raleway', sans-serif;
+    font-size: 200px;
+    color: #27272B;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    animation: 3s ease-out 0s 1 fadeInSlideUp;
+}
+
+@keyframes squareSlide {
+    0% {
+        height: 0%;
+    }
+    50% {
+        height: 0%;
+    }
+    60%{
+        height: 0%;
+    }
+    80% {
+        height: 100%
+    }
+    100% {
+        height: 100%
+    }
+}
+
+@keyframes squareSlideTwo {
+    0% {
+        background-color: rgba(242, 117, 78, 1);
+        width: 0%;
+        height: 100%;
+    }
+    20%{
+        width: 0%;
+        height: 100%;
+    }
+    50%
+    {
+        width: 100%;
+        height: 100%;
+    }
+    70%{
+        width: 100%;
+        height: 0%;
+        background-color: rgba(242, 117, 78, 1);
+    }
+    90%{
+        width: 100%;
+        height: 0%;
+        background-color: rgba(242, 117, 78, 1);
+    }
+
+    100%{
+        width: 100%;
+        height: 0%;
+        background-color: rgba(242, 117, 78, 1);
+    }
+}
+
+.slowmoText {
+    text-align: center;
+    font-family: "roverd", 'Raleway', sans-serif;
+    font-size: 200px;
+    color: #27272B;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    animation: 3s ease-out 0s 1 fadeInSlideUp;
+}
+
+
+/* ================== Slow Motion ====================== */
+
+#page1slowmo {
+    background-image: url(images/bg2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 580px;
+    margin-bottom: 70px;
+}
+
+#slowSelector {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(255,255,255,.6);
+    position: absolute;
+    animation: 2s ease-out 0s 1 slowSlide;
+}
+
+#slowSelector2 {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(68, 179, 90, 0);
+    position: absolute;
+    animation: 2s ease-out 0s 1 slowSlideTwo;
+}
+
+@keyframes slowSlide {
+    0% {
+        height: 0%;
+    }
+    50% {
+        height: 0%;
+    }
+    60%{
+        height: 50%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes slowSlideTwo {
+    0% {
+        width: 0%;
+        height: 100%;
+        background-color: rgba(68, 179, 90, 1);
+    }
+    20%{
+        width: 0%;
+        height: 100%;
+    }
+    50%
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    60%{
+        width: 100%;
+        height: 50%;
+    }
+
+    100%{
+        width: 100%;
+        height: 0%;
+        background-color: rgba(68, 179, 90, 1);
+    }
+}
+
+/* ================== Proximamente ====================== */
+
+#page1prox {
+    background-color: rgba(255,255,255,1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 580px;
+}
+
+#blackBox {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(5, 5, 7, 1);
+    position: absolute;
+    animation: 4s ease-out 0s 1 proxBlackAnim;
+}
+
+#blueBox {
+    width: 87.5%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(31, 58, 147, 1);
+    position: absolute;
+    animation: 4s ease-out 0s 1 proxBlueAnim;
+}
+
+#redBox {
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(242, 38, 19, 1);
+    position: absolute;
+    animation: 4s ease-out 0s 1 proxRedAnim;
+}
+
+#purpleBox {
+    width: 62.5%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(224, 72, 226, 1);
+    position: absolute;
+    animation: 4s ease-out 0s 1 proxPurpleAnim;
+}
+
+#greenBox {
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(0,230,64, 1);
+    position: absolute;
+    animation: 4s ease-out 0s 1 proxGreenAnim;
+}
+
+#lightblueBox {
+    width: 37.5%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(134, 226, 213, 1);
+    position: absolute;
+    animation: 4s ease-out 0s 1 proxLBlueAnim;
+}
+
+#yellowBox {
+    width: 25%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(241, 196, 15, 1);
+    position: absolute;
+    animation: 4s ease-out 0s 1 proxYellowAnim;
+}
+
+#whiteBox {
+    width: 12.5%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(245, 245, 243, 1);
+    position: absolute;
+    animation: 4s ease-out 0s 1 proxWhiteAnim;
+}
+
+.slowmoText {
+    text-align: center;
+    font-family: "roverd", 'Raleway', sans-serif;
+    font-size: 200px;
+    color: #27272B;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    animation: 2s ease-out 0s 1 slowFadeInSlideUp;
+}
+
+@keyframes slowFadeInSlideUp {
+    0%{
+      opacity: 0;
+      top: 40%;
+    }
+    30%{
+      opacity: 0;
+      top: 40%;
+    }
+    70%{
+      opacity: 1;
+      top: -5%;
+    }
+    90%{
+      opacity: 1;
+      top: 0%;  
+    }
+}
+
+@keyframes proxBlackAnim {
+    0%
+    {
+        width: 0%;
+    }
+    10%
+    {
+        width: 100%;
+    }
+    100%
+    {
+        width: 100%;
+    }
+}
+
+@keyframes proxBlueAnim {
+    0%
+    {
+        width: 0%;
+    }
+    5% {
+        width: 0%;
+    }
+    15%
+    {
+        width: 87.5%;
+    }
+    100%
+    {
+        width: 87.5%;
+    }
+}
+
+@keyframes proxRedAnim {
+    0%
+    {
+        width: 0%;
+    }
+    10% {
+        width: 0%;
+    }
+    20%
+    {
+        width: 75%
+    }
+    100%
+    {
+        width: 75%;
+    }
+}
+
+@keyframes proxPurpleAnim {
+    0%
+    {
+        width: 0%;
+    }
+    15% {
+        width: 0%;
+    }
+    25%
+    {
+        width: 62.5%
+    }
+    100%
+    {
+        width: 62.5%;
+    }
+}
+
+@keyframes proxGreenAnim {
+    0%
+    {
+        width: 0%;
+    }
+    20% {
+        width: 0%;
+    }
+    30%
+    {
+        width: 50%
+    }
+    100%
+    {
+        width: 50%;
+    }
+}
+
+@keyframes proxLBlueAnim {
+    0%
+    {
+        width: 0%;
+    }
+    25% {
+        width: 0%;
+    }
+    35%
+    {
+        width: 37.5%
+    }
+    100%
+    {
+        width: 37.5%;
+    }
+}
+
+@keyframes proxYellowAnim {
+    0%
+    {
+        width: 0%;
+    }
+    30% {
+        width: 0%;
+    }
+    40%
+    {
+        width: 25%
+    }
+    100%
+    {
+        width: 25%;
+    }
+}
+
+@keyframes proxWhiteAnim {
+    0%
+    {
+        width: 0%;
+    }
+    35% {
+        width: 0%;
+    }
+    45%
+    {
+        width: 12.5%
+    }
+    100%
+    {
+        width: 12.5%;
+    }
+}
