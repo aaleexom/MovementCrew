@@ -1,0 +1,398 @@
+* {
+	margin:0;
+	padding: 0;
+}
+
+@font-face {
+  font-family: "roverd";
+  src: url("../fonts/roverd.otf");
+}
+
+.vFull {
+	height: 100vh;
+	overflow: hidden;
+}
+
+.vFullOverflowAuto {
+	height: 100vh;
+	overflow: auto;
+}
+
+.vFullShow {
+	height: 100vh;
+}
+
+.pvFull {
+	height: 100%;
+}
+
+.pvFullOverflowAuto {
+	height: 100%;
+	overflow: auto;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+	width: 100%;
+}
+
+.navText{
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+.navText:hover{
+	font-family: 'Raleway', sans-serif;
+	color: white;
+	text-decoration: none;
+}
+
+.navText:hover::after{
+	content:'';
+	display: block;
+	height: 2px;
+	left: 0;
+	right: auto;
+	width: 100%;
+	background-color: white;
+}
+
+.navText::after{
+	content:'';
+	display: block;
+	position: absolute;
+	height: 2px;
+	right: 0;
+	width: 0;
+	background-color: white;
+	transition-property: width;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-out;
+}
+
+.navUl {
+	list-style: none;
+}
+
+.navLi {
+	display: inline-block;
+	position: relative;
+	padding: 0px 15px;
+}
+
+.navBg {
+	/*background-color: rgba(0,0,0,.1);*/
+}
+
+.logo {
+	font-family:"roverd", 'Raleway', sans-serif;
+	font-size: 2.5em;
+}
+
+.header-title {
+	font-family: 'Raleway', sans-serif;
+	font-size: 3em;
+}
+
+.header-text {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5em;
+	font-weight: 100;
+}
+
+.bgHead {
+	background-image: url(../images/bg.png);
+	background-size: cover;	
+	background-position: fixed;
+}
+
+.mCtitle {
+	background-color: white;
+	color: #1C97FE;
+	opacity: 1;
+	animation: 1s ease-out 0s 1 fadeMovementCrew;
+}
+
+.btnDisabled{
+	background-color: white;
+	height: 3px;
+	width: 0px;
+	transition: 1s ease;
+}
+
+.btnDisabled:hover{
+	background-color: white;
+	height: 3px;
+	width: 100px;
+}
+
+.roverdFont {
+	font-family: 'roverd', 'Raleway', sans-serif;
+	font-size: 5em;
+	background: -webkit-linear-gradient(top, #00AAff, #0055ff);
+	background: linear-gradient(top, #00AAff, #0055ff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.video-container{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.video-class {
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: .8;
+}
+
+.blue-opacity{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	margin: 0;
+	background-color:rgba(0,119,255,.75);
+}
+
+.whitePoly{
+	background-color: white;
+}
+
+.clp-ph {
+	overflow: hidden;
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 100%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 100%);
+}
+
+.tinyRaleway {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	font-weight: 100;
+	color: #0077ff;
+}
+
+.slider-btn {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.25em;
+	text-decoration: none;
+	color: #0077ff;
+}
+
+.slider-btn:hover {
+	text-decoration: none;
+	color: #0077ff;
+}
+
+/*==========================================================*/
+/*							Media Query						*/
+/*==========================================================*/
+
+
+
+/*====================Media Query: col-lg====================*/
+@media (min-width: 993px) {
+	.tinyRaleway {
+		font-family: 'Raleway', sans-serif;
+		font-size: 1.25em;
+		font-weight: 100;
+		color: #0077ff;
+	}
+}
+
+/*====================Media Query: col-md====================*/
+@media (max-width: 767px) {
+	  .logo {
+		font-family:"roverd", 'Raleway', sans-serif;
+		font-size: 2.25em;
+	}
+
+	.header-title {
+		font-family: 'Raleway', sans-serif;
+		font-size: 1.25em;
+		letter-spacing: .4pt;
+		font-variant: small-caps;
+	}
+
+	.header-text {
+		font-family: 'Raleway', sans-serif;
+		font-size: 1em;
+		font-weight: 100;
+	}
+
+	.navLi {
+		display: block;
+		padding: 0px;
+	}
+
+	.navText:hover{
+		font-family: 'Raleway', sans-serif;
+		color: white;
+		text-decoration: none;
+	}
+
+	.navText:hover::after{
+		content:'';
+		display: block;
+		height: 0px;
+		left: 0;
+		right: auto;
+		width: 0%;
+		background-color: white;
+	}
+
+	.navText::after{
+		content:'';
+		display: block;
+		position: absolute;
+		height: 0px;
+		right: 0;
+		width: 0;
+		background-color: white;
+		transition-property: width;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-out;
+	}
+
+	.clp-ph {
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	}
+
+	.roverdFont {
+		font-family: 'roverd', 'Raleway', sans-serif;
+		font-size: 4.5em;
+		color:#FFFFFF;
+
+		background: -webkit-linear-gradient(top, #ffffff, #ffffff);
+		background: linear-gradient(top, #ffffff, #ffffff);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.whitePoly{
+		background-color: transparent;
+	}
+
+	.tinyRaleway {
+		font-family: 'Raleway', sans-serif;
+		font-size: 1em;
+		font-weight: 100;
+		color: #fff;
+	}
+
+	.slider-btn {
+		font-family: 'Raleway', sans-serif;
+		font-size: 1.25em;
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.slider-btn:hover {
+		text-decoration: none;
+		color: #fff;
+	}
+}
+
+/*====================Media Query: col-sm====================*/
+@media (max-width: 575px) {
+	.logo {
+		font-family:"roverd", 'Raleway', sans-serif;
+		font-size: 2em;
+	}
+	.header-title {
+		font-family: 'Raleway', sans-serif;
+		font-size: 1em;
+		letter-spacing: .3;
+		font-variant: small-caps;
+	}
+
+	.header-text {
+		font-family: 'Raleway', sans-serif;
+		font-size: 0.8em;
+		font-weight: 100;
+	}
+
+	.navLi {
+		display: block;
+		padding: 5px 0px;
+	}
+
+	.navText:hover::after{
+		content:'';
+		display: block;
+		height: 0px;
+		left: 0;
+		right: auto;
+		width: 0%;
+		background-color: white;
+	}
+
+	.navText::after{
+		content:'';
+		display: block;
+		position: absolute;
+		height: 0px;
+		right: 0;
+		width: 0;
+		background-color: white;
+		transition-property: width;
+		transition-duration: 0.3s;
+		transition-timing-function: ease-out;
+	}
+
+	.roverdFont {
+		font-family: 'roverd', 'Raleway', sans-serif;
+		font-size: 4em;
+		color:#FFFFFF;
+	}
+
+	.tinyRaleway {
+		font-family: 'Raleway', sans-serif;
+		font-size: .9em;
+		font-weight: 100;
+		color: #fff;
+	}
+}
+
+/*====================title exception====================*/
+@media (max-width: 315px) {
+	.logo {
+		font-family:"roverd", 'Raleway', sans-serif;
+		font-size: 1.5em;
+	}
+}
+
+/*==========================================================*/
+/*							Keyframes						*/
+/*==========================================================*/
+
+@keyframes fadeMovementCrew {
+    0%
+    {
+        opacity: 0;
+        color:white;
+    }
+    50%
+    {
+        opacity: 0;
+        color:white;
+    }
+    100%
+    {
+        opacity: 1;
+        color:#1c97fe;
+    }
+}
