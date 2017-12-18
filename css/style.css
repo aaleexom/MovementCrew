@@ -197,13 +197,13 @@ a:hover {
 	padding: 0;
 	position: relative;
 	font-size: 1.5em;
-	font-variant: small-caps;
 	font-family: 'Raleway', sans-serif;
 	text-decoration: none;
 	background: transparent;
 	border: 1px solid #007bff;
 	padding: 10px 20px;
 	z-index:1;
+	letter-spacing: 1px;
 	overflow: hidden;
 }
 
@@ -439,6 +439,10 @@ a:hover {
 
 	.tinyRaleway {
 		font-size: .8em;
+	}
+
+	.roverdFont {
+		font-size: 3em;
 	}
 }
 
