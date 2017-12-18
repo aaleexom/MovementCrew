@@ -202,8 +202,7 @@ a:hover {
 	text-decoration: none;
 	background: transparent;
 	border: 1px solid #007bff;
-	border-radius: 10px;
-	padding: 20px;
+	padding: 10px 20px;
 	z-index:1;
 	overflow: hidden;
 }
@@ -223,7 +222,6 @@ a:hover {
 	transition-property: width;
 	transition-duration: 0.2s;
 	transition-timing-function: ease-out;
-	border-radius: 10px;
 	z-index: -1;
 	overflow: hidden;
 }
@@ -349,7 +347,6 @@ a:hover {
 	.btn-strike {
 		font-size: 1.25em;
 		border: 1px solid #fff;
-		padding: 15px;
 	}
 
 	.btn-strike:hover {
