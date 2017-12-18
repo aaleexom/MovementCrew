@@ -8,6 +8,14 @@
   src: url("../fonts/roverd.otf");
 }
 
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
 .vFull {
 	height: 100vh;
 	overflow: hidden;
@@ -184,16 +192,61 @@
 	color: #0077ff;
 }
 
-.slider-btn {
+.btn-strike {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	font-size: 1.5em;
+	font-variant: small-caps;
 	font-family: 'Raleway', sans-serif;
-	font-size: 1.25em;
 	text-decoration: none;
-	color: #0077ff;
+	background: transparent;
+	border: 1px solid #007bff;
+	border-radius: 10px;
+	padding: 20px;
+	z-index:1;
+	overflow: hidden;
 }
 
-.slider-btn:hover {
-	text-decoration: none;
-	color: #0077ff;
+.btn-strike:hover {
+	border: 1px solid #007bff;
+}
+
+.btn-strike:before {
+	position: absolute;
+	content:'';
+	top: 0;
+	height: 100%;
+	right: 0;
+	width: 0;
+	background-color: #007bff;
+	transition-property: width;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-out;
+	border-radius: 10px;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.btn-strike:hover:before {
+	content:'';
+	display: block;
+	height: 100%;
+	left: 0;
+	top: 0;
+	right: auto;
+	width: 100%;
+	z-index: -1;
+}
+
+.btn-strike span {
+	color:#007bff;
+	transition: .2s ease-out;
+	z-index: 1;
+}
+
+.btn-strike:hover span {
+	color: white;
 }
 
 /*==========================================================*/
@@ -293,16 +346,25 @@
 		color: #fff;
 	}
 
-	.slider-btn {
-		font-family: 'Raleway', sans-serif;
+	.btn-strike {
 		font-size: 1.25em;
-		text-decoration: none;
-		color: #fff;
+		border: 1px solid #fff;
+		padding: 15px;
 	}
 
-	.slider-btn:hover {
-		text-decoration: none;
-		color: #fff;
+	.btn-strike:hover {
+		border: 1px solid #fff;
+	}
+
+	.btn-strike:before {
+		background-color: #fff;
+	}
+	.btn-strike span {
+		color:#fff;
+	}
+
+	.btn-strike:hover span {
+		color: #007bff;
 	}
 }
 
@@ -372,6 +434,14 @@
 	.logo {
 		font-family:"roverd", 'Raleway', sans-serif;
 		font-size: 1.5em;
+	}
+
+	.btn-strike {
+		display: none;
+	}
+
+	.tinyRaleway {
+		font-size: .8em;
 	}
 }
 
