@@ -18,6 +18,7 @@
 				}
 			})
 		</script>
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-md navbar-dark nav-black-md px-5 py-0 fixed-top">
@@ -47,9 +48,9 @@
 	    <div class="container-fluid vFull bgHead px-0">
 	    	<div class="container pvFull text-white">
 	    		<div class="row pvFull align-items-center text-center">
-	    			<div class="col px-5">
+	    			<div class="col px-5 scrollHeader">
 	    				<h1 class="header-title">Bienvenido a <span class="mCtitle">MovementCrew</span></h1>
-	    				<p class="header-text">Esta es la página oficial de MovementCrew, en la que podrás encontrar multitud de recursos para avanzar en el tricking e incluso marcarte tus propios objetivos y hacer un seguimiento de estos.</p>
+	    				<p class="header-text">Esta es la página oficial de MovementCrew, en la que encontrarás multitud de recursos para el avance y la guía en el mundo del tricking, y otros deportes de riesgo/freestyle. ¡Márcate objetivos y cumple tus sueños!</p>
 	    			</div>
 	    		</div>
 	    	</div>
@@ -73,9 +74,9 @@
 						<div class="col-md-2 d-none d-md-flex pvFull"></div>
 						<div class="col-md-10 pvFull">
 							<div class="row pvFull align-items-center">
-								<div class="col">
+								<div class="col scrollRight">
 									<h1 class="roverdFont my-0 text-center">Tutoriales</h1>
-									<p class="text-justify tinyRaleway">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo consectetur iste, ea quisquam nam esse, labore necessitatibus! Suscipit corrupti quis, quam saepe autem vitae minima odit porro reprehenderit iusto, nihil perferendis.</p>
+									<p class="text-justify tinyRaleway">En esta sección encontraras variedad de video tutoriales creados por gente que domina la técnica (totalmente ajena al proyecto). Con estos vídeos podrás aprender y encontrar diferentes formas de enfocar los procesos de diferentes movimientos.</p>
 									<ul class="text-center navUl py-3">
 										<li><a href="#" class="btn-strike"><span>¡Vamos!</span></a></li>
 									</ul>
@@ -87,28 +88,28 @@
 			</div>
 		</div>
 
-		<div class="container-fluid pvFull text-white my-0 py-0">
-    		<div class="row pvFull align-items-center text-center">
-    			<div class="col-12 col-sm-6 pvFull bgOne">
-    				<div class="bgOverlay">
-	    				<div class="row  vFullShow align-items-center text-center">
-	    					<div class="col px-3 px-sm-4 px-md-5">
-	    						<h1 class="roverdFontWhite">Tricks</h1>
-	    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nisi placeat vero expedita beatae cumque amet animi et iste error.</p>
-	    						<ul class="text-center navUl py-3">
+		<div class="container-fluid pvFull text-white my-0 py-0 mx-0 px-0">
+    		<div class="row pvFull align-items-center text-center mx-0 px-0">
+    			<div class="col-12 col-sm-6 pvFull bgOne mx-0 px-0">
+    				<div class="bgOverlay mx-0 px-0">
+	    				<div class="row  vFullShow align-items-center text-center mx-0 px-0">
+	    					<div class="col px-3 px-sm-4 px-md-5 mx-0 scrollRight">
+	    						<h1 class="roverdFontWhite mx-0 px-0">Tricks</h1>
+	    						<p class="ralewayP">Descubre la gran cantidad de tricks de los que tenemos constancia que existen con una explicación o un gif.</p>
+	    						<ul class="text-center navUl py-3 mx-0 px-0">
 										<li><a href="#" class="btn-strike-white"><span>¡Vamos!</span></a></li>
 								</ul>
 	    					</div>
 	    				</div>
     				</div>
     			</div>
-    			<div class="col-12 col-sm-6 pvFull bgTwo">
-    				<div class="bgOverlay">
-	    				<div class="row  vFullShow align-items-center text-center">
-	    					<div class="col px-3 px-sm-4 px-md-5">
+    			<div class="col-12 col-sm-6 pvFull bgTwo mx-0 px-0">
+    				<div class="bgOverlay mx-0 px-0">
+	    				<div class="row  vFullShow align-items-center text-center mx-0 px-0">
+	    					<div class="col px-3 px-sm-4 px-md-5 mx-0 scrollLeft">
 	    						<h1 class="roverdFontWhite">Slow Motion</h1>
-	    						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor nisi placeat vero expedita beatae cumque amet animi et iste error.</p>
-	    						<ul class="text-center navUl py-3">
+	    						<p class="ralewayP">Aprecia a cámara super-lenta diferentes tricks, para así guiarte en tu camino por el aprendizaje de estos.</p>
+	    						<ul class="text-center navUl py-3 mx-0 px-0">
 										<li><a href="#" class="btn-strike-white"><span>¡Vamos!</span></a></li>
 								</ul>
 	    					</div>
@@ -125,6 +126,27 @@
     			</div>
     		</div>
     	</div>
+
+    	<script>
+    		window.sr = ScrollReveal();
+    		sr.reveal('.scrollHeader', {
+    			duration: 1000,
+    			origin: 'bottom',
+    			distance: '100px'
+    		});
+    		sr.reveal('.scrollRight', {
+    			duration: 1000,
+    			origin: 'right',
+    			distance: '50px',
+    			viewFactor: 0.5
+    		});
+    		sr.reveal('.scrollLeft', {
+    			duration: 1000,
+    			origin: 'left',
+    			distance: '50px',
+    			viewFactor: 0.5
+    		});
+    	</script>
 
  		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

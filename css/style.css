@@ -124,7 +124,6 @@ a:hover {
 	background-color: white;
 	color: #1C97FE;
 	opacity: 1;
-	animation: 1s ease-out 0s 1 fadeMovementCrew;
 }
 
 .btnDisabled{
@@ -375,6 +374,13 @@ a:hover {
 	font-weight: 100;
 }
 
+.ralewayP {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1em;
+	font-weight: 100;
+	color:#fff;
+}
+
 /*==========================================================*/
 /*							Media Query						*/
 /*==========================================================*/
@@ -611,21 +617,3 @@ a:hover {
 /*==========================================================*/
 /*							Keyframes						*/
 /*==========================================================*/
-
-@keyframes fadeMovementCrew {
-    0%
-    {
-        opacity: 0;
-        color:white;
-    }
-    50%
-    {
-        opacity: 0;
-        color:white;
-    }
-    100%
-    {
-        opacity: 1;
-        color:#1c97fe;
-    }
-}
