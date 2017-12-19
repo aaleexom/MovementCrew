@@ -7,32 +7,44 @@
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Raleway:300,500" rel="stylesheet">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+			$(window).on('scroll', function() {
+				if($(window).scrollTop()) {
+					$('nav').addClass('nav-black');
+				}
+				else {
+					$('nav').removeClass('nav-black');
+				}
+			})
+		</script>
 	</head>
 	<body>
-	    <div class="container-fluid vFull bgHead px-0">
-			<nav class="navbar navbar-expand-md navbar-dark px-5 py-0 navBg">
-		      <a class="navbar-brand logo" href="#">MovementCrew</a>
-		      <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-		        <span class="navbar-toggler-icon"></span>
-		      </button>
+		<nav class="navbar navbar-expand-md navbar-dark nav-black-md px-5 py-0 fixed-top">
+	      <a class="navbar-brand logo" href="#">MovementCrew</a>
+	      <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="navbar-toggler-icon"></span>
+	      </button>
 
-		      <div class="collapse navbar-collapse justify-content-end" id="navbarsExample04">
-		        <ul class="navUl">
-		          <li class="navLi text-center active">
-		            <a class="navText" href="#">Inicio<span class="btnDisabled"></span></a>
-		          </li>
-		          <li class="navLi text-center active">
-		            <a class="navText" href="#">Tutoriales</a>
-		          </li>
-		          <li class="navLi text-center active">
-		            <a class="navText" href="#">Tricks</a>
-		          </li>
-		          <li class="navLi text-center active">
-		            <a class="navText" href="#">Slow Motion</a>
-		          </li>
-		        </ul>
-		      </div>
-		    </nav>
+	      <div class="collapse navbar-collapse justify-content-end black-md" id="navbarsExample04">
+	        <ul class="navUl">
+	          <li class="navLi text-center active">
+	            <a class="navText" href="#">Inicio<span class="btnDisabled"></span></a>
+	          </li>
+	          <li class="navLi text-center active">
+	            <a class="navText" href="#">Tutoriales</a>
+	          </li>
+	          <li class="navLi text-center active">
+	            <a class="navText" href="#">Tricks</a>
+	          </li>
+	          <li class="navLi text-center active">
+	            <a class="navText" href="#">Slow Motion</a>
+	          </li>
+	        </ul>
+	      </div>
+	    </nav>
+
+	    <div class="container-fluid vFull bgHead px-0">
 	    	<div class="container pvFull text-white">
 	    		<div class="row pvFull align-items-center text-center">
 	    			<div class="col px-5">

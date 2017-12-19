@@ -93,8 +93,9 @@ a:hover {
 	padding: 0px 15px;
 }
 
-.navBg {
-	/*background-color: rgba(0,0,0,.1);*/
+.nav-black {
+	background-color: rgba(0,0,0,.5);
+	transition: .2s;
 }
 
 .logo {
@@ -518,6 +519,14 @@ a:hover {
 		font-weight: 100;
 	}
 
+	.nav-black {
+		background-color: rgba(0,0,0,0);
+	}
+	
+	.nav-black-md {
+		background-color: rgba(0,0,0,.5);
+	}
+
 	.navLi {
 		display: block;
 		padding: 5px 0px;
@@ -567,8 +576,8 @@ a:hover {
 		background-color: rgba(0,153,255,.5);
 	}
 	.copyright {
-	font-size: .7em;
-}
+		font-size: .7em;
+	}
 }
 
 /*====================title exception====================*/
