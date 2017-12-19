@@ -148,6 +148,15 @@ a:hover {
 	-webkit-text-fill-color: transparent;
 }
 
+.roverdFontWhite {
+	font-family: 'roverd', 'Raleway', sans-serif;
+	font-size: 6em;
+	background: -webkit-linear-gradient(top, #fff, #b0b0b0);
+	background: linear-gradient(top, #fff, #b0b0b0);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .video-container{
 	position: absolute;
 	height: 100%;
@@ -247,6 +256,124 @@ a:hover {
 	color: white;
 }
 
+.btn-strike-white {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	font-size: 1.5em;
+	font-family: 'Raleway', sans-serif;
+	text-decoration: none;
+	background: transparent;
+	border: 1px solid white;
+	padding: 10px 20px;
+	z-index:1;
+	letter-spacing: 1px;
+	overflow: hidden;
+}
+
+.btn-strike-white:hover {
+	border: 1px solid white;
+}
+
+.btn-strike-white:before {
+	position: absolute;
+	content:'';
+	top: 0;
+	height: 100%;
+	right: 0;
+	width: 0;
+	background-color: white;
+	transition-property: width;
+	transition-duration: 0.2s;
+	transition-timing-function: ease-out;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.btn-strike-white:hover:before {
+	content:'';
+	display: block;
+	height: 100%;
+	left: 0;
+	top: 0;
+	right: auto;
+	width: 100%;
+	z-index: -1;
+}
+
+.btn-strike-white span {
+	color: white;
+	transition: .2s ease-out;
+	z-index: 1;
+}
+
+.btn-strike-white:hover span {
+	color: #007bff;
+}
+
+.bgOne {
+	background-image: url(../images/bgOne.png);
+	background-size: cover;	
+	background-position: fixed;
+	transition: .2s ease;
+	z-index: 0;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.bgOne:hover {
+	background-image: url(../images/bgOne.png);
+	background-size: cover;	
+	background-position: fixed;
+	box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.5);
+	z-index: 1;
+}
+
+.bgTwo {
+	background-image: url(../images/bgTwo.png);
+	background-size: cover;	
+	background-position: fixed;
+	transition: .2s ease;
+	z-index: 0;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.bgTwo:hover {
+	background-image: url(../images/bgTwo.png);
+	background-size: cover;	
+	background-position: fixed;
+	box-shadow: 0px 0px 8px 3px rgba(0,0,0,0.5);
+	z-index: 1;
+}
+
+.bgOverlay {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0,153,255,.9);
+	transition: .2s ease;
+}
+
+.bgOverlay:hover {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0,153,255,.5);
+}
+
+.copyright {
+	font-family: 'Raleway', sans-serif;
+	font-size: .8em;
+	color: #fff;
+	letter-spacing: .5px;
+	font-weight: 100;
+}
+
 /*==========================================================*/
 /*							Media Query						*/
 /*==========================================================*/
@@ -326,11 +453,14 @@ a:hover {
 		font-family: 'roverd', 'Raleway', sans-serif;
 		font-size: 4.5em;
 		color:#FFFFFF;
-
 		background: -webkit-linear-gradient(top, #ffffff, #ffffff);
 		background: linear-gradient(top, #ffffff, #ffffff);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+	}
+
+	.roverdFontWhite {
+		font-size: 4.5em;
 	}
 
 	.whitePoly{
@@ -362,6 +492,10 @@ a:hover {
 
 	.btn-strike:hover span {
 		color: #007bff;
+	}
+
+	.btn-strike-white {
+		font-size: 1.25em;
 	}
 }
 
@@ -418,12 +552,23 @@ a:hover {
 		color:#FFFFFF;
 	}
 
+	.roverdFontWhite {
+		font-size: 4em;
+	}
+
 	.tinyRaleway {
 		font-family: 'Raleway', sans-serif;
 		font-size: .9em;
 		font-weight: 100;
 		color: #fff;
 	}
+
+	.bgOverlay {
+		background-color: rgba(0,153,255,.5);
+	}
+	.copyright {
+	font-size: .7em;
+}
 }
 
 /*====================title exception====================*/
@@ -437,11 +582,19 @@ a:hover {
 		display: none;
 	}
 
+	.btn-strike-white {
+		display: none;
+	}
+
 	.tinyRaleway {
 		font-size: .8em;
 	}
 
 	.roverdFont {
+		font-size: 3em;
+	}
+
+	.roverdFontWhite {
 		font-size: 3em;
 	}
 }
